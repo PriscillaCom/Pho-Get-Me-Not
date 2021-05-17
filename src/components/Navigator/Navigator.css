@@ -8,6 +8,11 @@
 
 }
 
+.logo{
+    height: 11vh;
+    width: 6vw;
+}
+
 .optionsContainer {
     display: flex;
     align-items: center;
@@ -20,8 +25,8 @@
     cursor: pointer;
 }
 
-.shoppingOption {
-    height: 10vh;
+.shoppingIcon {
+    height: 8vh;
     margin: 10px;
     cursor: pointer;
 }
