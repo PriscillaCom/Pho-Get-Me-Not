@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './Homepage.scss';
+import './Homepage.css';
 
-const Homepage = () => {
+const Homepage = () => (
     <div className="homepage">
-        
+        <h1>hi</h1>
     </div>
-};
+);
 
 export default Homepage;
