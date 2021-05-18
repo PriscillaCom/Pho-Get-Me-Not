@@ -16,7 +16,7 @@ const images = [
     },
     {
         title: 'beverages',
-        imageUrl: 'https://images.pexels.com/photos/1162455/pexels-photo-1162455.jpeg?cs=srgb&dl=pexels-ariana-gavra-1162455.jpg&fm=jpg',
+        imageUrl: 'https://images.pexels.com/photos/4790062/pexels-photo-4790062.jpeg?cs=srgb&dl=pexels-cottonbro-4790062.jpg&fm=jpg',
         id: 3
     }
 ];
