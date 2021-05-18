@@ -1,23 +1,23 @@
 .navigator{
-    height: 70px;
+    height: 90px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    background-color: peru;
-    margin-bottom: 25px;
-
+    color: darkgrey;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
 }
 
 .logo{
-    height: 11vh;
-    width: 6vw;
+    padding: 10px 15px;
+    height: 100px;
+    width: 130px;
 }
 
 .optionsContainer {
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: flex-end;
 }
 
 .options {
