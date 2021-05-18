@@ -1,0 +1,15 @@
+.menuPage {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuImage img {
+    margin-top: 50px;
+    height: 330px;
+    width: 330px;
+    background-color: seagreen;
+}
+
