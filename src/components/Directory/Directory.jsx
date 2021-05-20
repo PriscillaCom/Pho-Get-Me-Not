@@ -1,16 +1,24 @@
 import React, {Component} from 'react';
-import MenuItems from '../MenuItems/MenuItems';
-import images from './images';
+import MenuCategory from '../MenuCategory/MenuCategory';
+import MENU_ITEMS_DATA from './MENU_ITEMS_DATA';
 
 import './Directory.css';
 
 class Directory extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            menu_items: MENU_ITEMS_DATA
+        }
+    }
+
     render(){
+        const {menu_items} = this.state;
         return(
             <div className='directoryMenu'>
                 {
-                    images.map(({id, imageUrl, ...otherProps}) => (
-                        <MenuItems key={id} imageUrl={imageUrl} {...otherProps}/>
+                    menu_items.map(({id, imageUrl, ...otherProps}) => (
+                        <MenuCategory key={id} imageUrl={imageUrl} {...otherProps}/>
                     ))
                 }
             </div>

@@ -1,0 +1,18 @@
+.menuCategory {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    margin: 23px 0px;
+    height: 32vh;
+    width: 23vw;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* do a hover over affect later when selecting */
+/* modiy text portion */
