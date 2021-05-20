@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import Logo from '../../assets/maneki-logo.png';
 
@@ -10,11 +11,13 @@ import './Navigator.css';
 const Navigator = () => (
     <div className="navigator">
         <div className='logoContainer'>
+            <Link to="/">
             <img src={Logo} alt='Hello Cat Logo' className='logo'/>
+            </Link>
         </div>
         <div className='optionsContainer'>
-            <h1 className='options'>Home</h1>
-            <h1 className='options'>Menu</h1>
+            <Link to="/" className='options'>Home</Link>
+            <Link to="/menu" className='options'>Menu</Link>
             <h1 className='options'>Location</h1>
             <ShoppingIcon className='shoppingIcon'/>
         </div>

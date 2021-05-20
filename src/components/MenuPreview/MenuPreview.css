@@ -1,5 +1,4 @@
 .menu_preview {
-    background-color:deeppink ;
     display: flex;
     flex-direction: column;
 }
@@ -8,5 +7,4 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    background-color: gold;
 }
