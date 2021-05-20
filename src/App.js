@@ -13,7 +13,6 @@ function App() {
       <Switch>
         <Route exact path='/menu' component={MenuPage}/>
         <Route expact path='/' component={Homepage}/>
-
       </Switch>
     </div>
   );
