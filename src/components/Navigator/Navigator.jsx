@@ -18,6 +18,7 @@ const Navigator = () => (
         <div className='optionsContainer'>
             <Link to="/" className='options'>Home</Link>
             <Link to="/menu" className='options'>Menu</Link>
+            <Link to="/order" className='options'>Order Now</Link>
             <h1 className='options'>Location</h1>
             <ShoppingIcon className='shoppingIcon'/>
         </div>

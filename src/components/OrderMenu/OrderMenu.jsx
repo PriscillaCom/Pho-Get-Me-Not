@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
-import MenuPreview from '../MenuPreview/MenuPreview';
+import OrderPreview from '../OrderPreview/OrderPreview.jsx';
 import MENU_ITEMS_DATA from '../Directory/MENU_ITEMS_DATA';
 
-import './MenuDirectory.css';
+import './OrderMenu.css';
 
-class MenuDirectory extends Component {
+class OrderMenu extends Component {
     constructor(props){
         super(props);
         this.state = {
-            menu_items: MENU_ITEMS_DATA
+            menu_items: MENU_ITEMS_DATA,
         }
     }
 
     render(){
         const {menu_items} = this.state;
         return(
-            <div className='menu_directory'>
+            <div className='orderMenu'>
                 {
                     menu_items.map(({id, ...otherProps}) => (
-                        <MenuPreview key={id} {...otherProps}/>
+                        <OrderPreview key={id} {...otherProps}/>
                     ))
                 }
             </div>
@@ -26,6 +26,4 @@ class MenuDirectory extends Component {
     }
 }
 
-//IS it possible to reuse this for OrderMenu, saves a lot of time, maybe grab location? 
-
-export default MenuDirectory;
+export default OrderMenu;

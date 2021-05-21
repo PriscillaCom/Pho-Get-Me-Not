@@ -1,6 +1,6 @@
 import React from 'react';
 
-import coverPhoto from '../../assets/pho5.jpg';
+import coverPhoto from '../../assets/cover.jpg';
 import Directory from '../../components/Directory/Directory';
 
 import './Homepage.css';
