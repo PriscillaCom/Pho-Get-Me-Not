@@ -2,8 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Logo from '../../assets/maneki-logo.png';
-
-//temp
 import CartIcon from '../CartIcon/CartIcon';
 
 import './Navigator.css';
