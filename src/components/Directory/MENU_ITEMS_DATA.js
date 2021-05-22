@@ -51,24 +51,29 @@ const menuItems = [
                 imageUrl: 'https://cdn.pixabay.com/photo/2020/12/14/07/38/food-5830202_1280.jpg',
                 title: 'Rice',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:13,
                 imageUrl: 'https://cdn.pixabay.com/photo/2020/12/14/07/38/food-5830202_1280.jpg',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+
             },
             {
                 id:21,
                 imageUrl: 'https://cdn.pixabay.com/photo/2020/12/14/07/38/food-5830202_1280.jpg',
                 title: 'Rice',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:22,
                 imageUrl: 'https://cdn.pixabay.com/photo/2020/12/14/07/38/food-5830202_1280.jpg',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ]
     },
@@ -82,36 +87,42 @@ const menuItems = [
                 imageUrl: 'https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?cs=srgb&dl=pexels-jer-chung-2059151.jpg&fm=jpg',
                 title: 'Pho',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:15,
                 imageUrl: 'https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?cs=srgb&dl=pexels-jer-chung-2059151.jpg&fm=jpg',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:23,
                 imageUrl: 'https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?cs=srgb&dl=pexels-jer-chung-2059151.jpg&fm=jpg',
                 title: 'Pho',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:24,
                 imageUrl: 'https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?cs=srgb&dl=pexels-jer-chung-2059151.jpg&fm=jpg',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:25,
                 imageUrl: 'https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?cs=srgb&dl=pexels-jer-chung-2059151.jpg&fm=jpg',
                 title: 'Pho',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:26,
                 imageUrl: 'https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?cs=srgb&dl=pexels-jer-chung-2059151.jpg&fm=jpg',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
         ]
     },
@@ -125,24 +136,28 @@ const menuItems = [
                 imageUrl: 'https://images.pexels.com/photos/5946627/pexels-photo-5946627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 title: 'Pho',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:17,
                 imageUrl: 'https://images.pexels.com/photos/5946627/pexels-photo-5946627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:27,
                 imageUrl: 'https://images.pexels.com/photos/5946627/pexels-photo-5946627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 title: 'Pho',
                 price: 7.00,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             },
             {
                 id:28,
                 imageUrl: 'https://images.pexels.com/photos/5946627/pexels-photo-5946627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 title: 'Pho Bo',
-                price: 7.50
+                price: 7.50,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ]
     }

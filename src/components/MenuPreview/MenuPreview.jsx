@@ -27,6 +27,7 @@ const MenuPreview = ({title, food}) => {
                 ))
             }
         </div>
+        {/* maybe add a back to top button */}
     </div>
     );
 };

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Logo from '../../assets/maneki-logo.png';
 
 //temp
-import {ReactComponent as ShoppingIcon} from '../../assets/shopping-bag.svg';
+import CartIcon from '../CartIcon/CartIcon';
 
 import './Navigator.css';
 
@@ -20,7 +20,7 @@ const Navigator = () => (
             <Link to="/menu" className='options'>Menu</Link>
             <Link to="/order" className='options'>Order Now</Link>
             <h1 className='options'>Location</h1>
-            <ShoppingIcon className='shoppingIcon'/>
+            <CartIcon/>
         </div>
     </div>
 );
