@@ -1,37 +1,38 @@
-.navigator{
-    height: 90px;
-    width: 100%;
-    display: flex;
-    color: darkgrey;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top:0;
+.navigator {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  color: darkgrey;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
-.logo{
-    padding: 10px 15px;
-    height: 100px;
-    width: 130px;
+.logo {
+  padding: 10px 15px;
+  height: 100px;
+  width: 130px;
 }
 
 .optionsContainer {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .options {
-    padding: 10px 15px;
-    cursor: pointer;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .shoppingIcon {
-    height: 8vh;
-    margin: 10px;
-    cursor: pointer;
+  height: 8vh;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .listContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
