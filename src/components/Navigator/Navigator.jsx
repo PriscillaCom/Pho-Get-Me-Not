@@ -6,6 +6,7 @@ import CartIcon from '../CartIcon/CartIcon';
 
 import './Navigator.css';
 
+
 const Navigator = () => (
     <div className="navigator">
         <div className='logoContainer'>

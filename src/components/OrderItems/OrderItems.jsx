@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { OrderContext } from '../../App';
 import './OrderItems.css';
 
 const OrderItems = ({title,price,description,imageUrl}) => {
-    // const [cartItems,setCartItems] = useState([]);
+    const { order, setOrder } = useContext(OrderContext)
 
-    // Add Cart Item state 
+    function addOrder() {
+        setOrder(order + 1);
+    }
+    
 
     return(
     <div className="order_items">
@@ -13,8 +17,7 @@ const OrderItems = ({title,price,description,imageUrl}) => {
             <h4>{title}</h4>
             <p>{description}</p>
             <h4>${price}</h4>
-            {/* <button onClick={() => addItem(item)}>Add To Cart</button> */}
-            <button>Add Item</button>
+            <button onClick={addOrder}>Add To Cart</button> 
         </div>
     </div>
     );
