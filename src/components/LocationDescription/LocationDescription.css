@@ -1,0 +1,12 @@
+.locationDescription{
+    color: #fffaf0;
+}
+.amenities-container{
+    width: 28rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.amenities-list, .covid-list{
+    list-style-type: circle;
+}

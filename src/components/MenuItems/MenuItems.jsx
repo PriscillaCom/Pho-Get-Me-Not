@@ -11,7 +11,6 @@ const MenuItems= ({title,price,imageUrl}) => {
             <h4>{title}</h4>
             <h4>${price}</h4>
         </div>
-        {/* maybe a description section idunno */}
     </div>
     );
 };

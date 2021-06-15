@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage/Homepage';
 import Navigator from './components/Navigator/Navigator';
 import MenuPage from './pages/MenuPage/MenuPage';
 import OrderPage from './pages/OrderPage/OrderPage';
+import LocationPage from './pages/LocationPage/LocationPage';
 
 export const OrderContext = createContext();
 
@@ -19,6 +20,7 @@ function App() {
         <Switch>
           <Route exact path='/menu' component={MenuPage}/>
           <Route exact path='/order' component={OrderPage}/>
+          <Route exact path='/location' component={LocationPage}/>
           <Route expact path='/' component={Homepage}/>
         </Switch>
       </OrderContext.Provider>

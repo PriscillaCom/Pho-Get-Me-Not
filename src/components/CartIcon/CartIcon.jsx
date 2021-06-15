@@ -6,6 +6,7 @@ import './CartIcon.css';
 const CartIcon = () => {
     const [cartHidden, setCartHidden] = useState(true);
     const { order } = useContext(OrderContext)
+    
     const toggleCartHidden = () => {
         setCartHidden(!cartHidden);
         console.log(cartHidden);
