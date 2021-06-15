@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     background-image: url("../../assets/location-bg.jpg");
-    background-position: center;
+    background-position: 42% 58%;
     background-size: cover;
+    opacity: 0.85;
 }
