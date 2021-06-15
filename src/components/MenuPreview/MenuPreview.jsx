@@ -9,9 +9,11 @@ const MenuPreview = ({title, food}) => {
     useEffect(() => {
         if(location.hash){
             let elem = document.getElementById(location.hash.slice(1));
+            let position = elem.getBoundingClientRect();
             elem 
-                ? elem.scrollIntoView({behavior: 'smooth'})
+                ? window.scrollTo(position.left, position.top + window.scrollY - 95)
                 : window.scrollTo({top:0,left:0,behavior:"smooth"});
+                console.log(elem);
         }
         else
             return window.scrollTo({top:0,left:0,behavior:"smooth"});
