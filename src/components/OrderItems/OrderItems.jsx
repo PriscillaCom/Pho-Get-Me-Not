@@ -1,25 +1,28 @@
-import React, { useContext } from 'react';
-import { OrderContext } from '../../App';
+import React from 'react';
 import './OrderItems.css';
 
-const OrderItems = ({title,price,description,imageUrl}) => {
-    const { order, setOrder } = useContext(OrderContext)
+import ShopContext from '../../context/ShopContext';
 
-    function addOrder() {
-        setOrder(order + 1);
-    }
-    
-
+const OrderItems = (props) => {
+    console.log(props);
+    const {title,description,price,imageUrl} = props;
     return(
-    <div className="order_items">
-        <img className='order_image' src={imageUrl} alt='food'/>
-        <div className='content'>
-            <h4>{title}</h4>
-            <p>{description}</p>
-            <h4>${price}</h4>
-            <button onClick={addOrder}>Add To Cart</button> 
-        </div>
-    </div>
+    <ShopContext.Consumer>
+        {context => (
+            <div className="order_items">
+                <img className='order_image' src={imageUrl} alt='food'/>
+                <div className='content'>
+                    <h4>{title}</h4>
+                    <p>{description}</p>
+                    <h4>${price}</h4>
+                    <button onClick={context.addProductToCart.bind(this,props)}>
+                        Add To Cart
+                    </button> 
+                </div>
+            </div>
+        )}
+    </ShopContext.Consumer>
+    
     );
 };
 
