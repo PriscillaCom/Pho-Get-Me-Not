@@ -18,7 +18,28 @@ class App extends React.Component {
   };
 
   addProductToCart = product => {
-    console.log('Adding product', product);
+    console.log('Adding product', product, product.id);
+    let updatedCart = [...this.state.cart];
+
+    const UpdateItemIndex = updatedCart.findIndex(
+      item => item.id === product.id
+    )
+    console.log('item index',UpdateItemIndex);
+    if(UpdateItemIndex < 0){
+      updatedCart.push({...product, quantity: 1});
+      console.log('updatedCart',updatedCart);
+
+    }
+    else{
+      const updatedItem = {
+        ...updatedCart[UpdateItemIndex]
+    };
+
+    updatedItem.quantity++;
+    updatedCart[UpdateItemIndex] = updatedItem;
+    }
+    this.setState({cart: updatedCart});
+    console.log('CART',this.state.cart);
   };
 
   removeProductFromCart = productID => {

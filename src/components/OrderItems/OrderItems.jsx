@@ -4,7 +4,6 @@ import './OrderItems.css';
 import ShopContext from '../../context/ShopContext';
 
 const OrderItems = (props) => {
-    console.log(props);
     const {title,description,price,imageUrl} = props;
     return(
     <ShopContext.Consumer>

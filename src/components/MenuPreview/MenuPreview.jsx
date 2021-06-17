@@ -13,7 +13,6 @@ const MenuPreview = ({title, food}) => {
             elem 
                 ? window.scrollTo(position.left, position.top + window.scrollY - 95)
                 : window.scrollTo({top:0,left:0,behavior:"smooth"});
-                console.log(elem);
         }
         else
             return window.scrollTo({top:0,left:0,behavior:"smooth"});

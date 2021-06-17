@@ -22,8 +22,8 @@ const OrderPreview = ({title, food}) => {
         <h1 id={title} className='title'> {title.toUpperCase()}</h1>
         <div className='order_preview'>
             {
-                food.map(({id,...otherProps}) => (
-                    <OrderItems key={id} {...otherProps} />
+                food.map((prop) => (
+                    <OrderItems key={prop.id} {...prop} />
                 ))
             }
         </div>

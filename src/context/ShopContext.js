@@ -5,7 +5,6 @@ export default React.createContext({
     proudcts: MENU_ITEMS_DATA,
     cart:[],
     addProductToCart: product => {
-        console.log('adding',product);
     },
     deleteProductFromCart: productId => {}
 });

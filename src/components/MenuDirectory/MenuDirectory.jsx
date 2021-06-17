@@ -26,6 +26,4 @@ class MenuDirectory extends Component {
     }
 }
 
-//IS it possible to reuse this for OrderMenu, saves a lot of time, maybe grab location? 
-
 export default MenuDirectory;
