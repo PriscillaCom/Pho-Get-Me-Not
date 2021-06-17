@@ -6,24 +6,27 @@ import ShopContext from '../../context/ShopContext';
 
 class CartIcon extends React.Component {
     static contextType = ShopContext;
-
-   //maybe create a setstate for count instead? 
-    getCount = () => {
-        let count = 0;
+    
+    handleCount = () => {
+        let totalQuantity = 0;
         this.context.cart.map(item => (
-            count += item.quantity
+            totalQuantity += item.quantity
         ))
-        return count;
+        return totalQuantity;
     }
 
     render(){
         return(
             <ShopContext.Consumer>
                 {context => (
-                    <div className='icon_container'>
-                        <ShoppingIcon className='shopping_icon'/>
-                        <span className='item_count'>{this.getCount()}</span>
-                        {console.log(context.cart)}
+                    <div>
+                        <div className='icon_container' onClick={context.toggleCart}>
+                            <ShoppingIcon className='shopping_icon'/>
+                            <span className='item_count'>{this.handleCount()}</span>
+                            {console.log('CART',context.cart)}
+                    
+                        </div>
+                        {console.log(context.cartHidden)}
                     </div>
                 )}
             </ShopContext.Consumer>    

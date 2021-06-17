@@ -2,8 +2,10 @@ import React from 'react';
 import MENU_ITEMS_DATA from '../components/Directory/MENU_ITEMS_DATA';
 
 export default React.createContext({
-    proudcts: MENU_ITEMS_DATA,
+    products: MENU_ITEMS_DATA,
     cart:[],
+    cartHidden: true,
+    toggleCart: () => {},
     addProductToCart: product => {
     },
     deleteProductFromCart: productId => {}
