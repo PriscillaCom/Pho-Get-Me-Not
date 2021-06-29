@@ -35,6 +35,14 @@ class MainState extends React.Component {
         }
         this.setState({cart: updatedCart});
       };
+
+      handleTotal = () => {
+        let totalPrice = 0;
+        this.state.cart.map(item => (
+            totalPrice += item.price * item.quantity
+        ))
+        return totalPrice;
+      };
     
       removeProductFromCart = productID => {
         console.log('Removing product',productID);
@@ -47,7 +55,8 @@ class MainState extends React.Component {
             cartHidden: this.state.cartHidden,
             toggleCart: this.toggleCart,
             addProductToCart: this.addProductToCart,
-            removeProductFromCart: this.removeProductFromCart
+            removeProductFromCart: this.removeProductFromCart,
+            handleTotal: this.handleTotal
           }}>
               {this.props.children};
             </ShopContext.Provider>

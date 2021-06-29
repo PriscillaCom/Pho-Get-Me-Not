@@ -8,5 +8,6 @@ export default React.createContext({
     toggleCart: () => {},
     addProductToCart: product => {
     },
-    deleteProductFromCart: productId => {}
+    deleteProductFromCart: productId => {},
+    handleTotal: () => {}
 });
