@@ -27,7 +27,8 @@ const CartDropdown = () => {
                             </div>
 
                             <div className='total-price'>
-                                <p>Total: ${context.handleTotal()}</p>
+                                <p>Total:</p>
+                                <p> ${context.handleTotal()}</p>
                             </div>
 
                             <button className='checkout-button' onClick={routeChange}>

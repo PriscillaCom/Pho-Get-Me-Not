@@ -1,5 +1,6 @@
 .checkout-preview-container{
-    width: 600px;
-    height: 400px;
-    padding: 20px 0px;
+    width: 40vw;
+    height: 85vh;
+    overflow: auto;
+    margin-top: 10px;
 }

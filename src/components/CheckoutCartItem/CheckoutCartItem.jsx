@@ -14,8 +14,9 @@ const CheckoutCartItem = (props)=> {
                     <div className='checkout-cart-item-description'>
                         <p>{title}</p>
                         <p>$ {price}</p>
+                        <button onClick={context.addProductToCheckout.bind(this,props.id)}>Addon</button>
                         <p>Quantity: {quantity}</p>
-                        <button onClick={context.removeProductFromCart.bind(this,props.id)}>Remove</button>
+                        <button onClick={context.removeProductFromCheckout.bind(this,props.id)}>Remove</button>
                     </div>
                 </div>
             )}

@@ -45,7 +45,7 @@ class MainState extends React.Component {
         return totalPrice;
       };
     
-      removeProductFromCart = productId => {
+      removeProductFromCheckout = productId => {
         console.log('Removing product',productId);
         let updatedCart = [...this.state.cart];
 
@@ -68,8 +68,20 @@ class MainState extends React.Component {
 
         console.log('before:', this.state.cart);
         this.setState({cart: updatedCart});
-      };
+    };
 
+    addProductToCheckout = productId => {
+      console.log('Adding product',productId);
+
+      let updatedCart = [...this.state.cart];
+
+      const toAddItemIndex = updatedCart.findIndex(item => item.id === productId);
+
+      updatedCart[toAddItemIndex].quantity++;
+
+      this.setState({cart: updatedCart});
+    };
+ 
     render(){
         return <ShopContext.Provider value={{
             products: this.state.products, 
@@ -77,7 +89,8 @@ class MainState extends React.Component {
             cartHidden: this.state.cartHidden,
             toggleCart: this.toggleCart,
             addProductToCart: this.addProductToCart,
-            removeProductFromCart: this.removeProductFromCart,
+            removeProductFromCheckout: this.removeProductFromCheckout,
+            addProductToCheckout: this.addProductToCheckout,
             handleTotal: this.handleTotal
           }}>
               {this.props.children}
