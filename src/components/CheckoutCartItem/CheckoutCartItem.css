@@ -1,0 +1,17 @@
+.checkout-cart-item-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-cart-item-container img {
+    width: 200px;
+    height: 150px;
+}
+
+.checkout-cart-item-description {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}

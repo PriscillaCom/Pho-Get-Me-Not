@@ -10,7 +10,6 @@ const CartItem = ({title, imageUrl, quantity, price}) => {
                     <p>{title}</p>
                     <p>$ {price}</p>
                     <p>Quantity: {quantity}</p>
-
                 </div>
         </div>
     )

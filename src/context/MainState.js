@@ -40,12 +40,34 @@ class MainState extends React.Component {
         let totalPrice = 0;
         this.state.cart.map(item => (
             totalPrice += item.price * item.quantity
-        ))
+        ));
+        totalPrice = totalPrice.toFixed(2);
         return totalPrice;
       };
     
-      removeProductFromCart = productID => {
-        console.log('Removing product',productID);
+      removeProductFromCart = productId => {
+        console.log('Removing product',productId);
+        let updatedCart = [...this.state.cart];
+
+        const toRemoveItemIndex = updatedCart.findIndex(
+          item => item.id === productId
+        );
+        
+        const toRemoveItem = {
+          ...updatedCart[toRemoveItemIndex]
+        }
+
+        if(toRemoveItem.quantity > 1){
+          toRemoveItem.quantity--;
+          updatedCart[toRemoveItemIndex] = toRemoveItem;
+          console.log(toRemoveItem.quantity);
+        }
+        else{
+          updatedCart.splice(toRemoveItemIndex,1);
+        }
+
+        console.log('before:', this.state.cart);
+        this.setState({cart: updatedCart});
       };
 
     render(){
@@ -58,7 +80,7 @@ class MainState extends React.Component {
             removeProductFromCart: this.removeProductFromCart,
             handleTotal: this.handleTotal
           }}>
-              {this.props.children};
+              {this.props.children}
             </ShopContext.Provider>
     }
 }
