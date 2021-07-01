@@ -13,7 +13,7 @@ const OrderItems = (props) => {
                 <div className='content'>
                     <h4>{title}</h4>
                     <p>{description}</p>
-                    <h4>${price}</h4>
+                    <h4>${price.toFixed(2)}</h4>
                     <button onClick={context.addProductToCart.bind(this,props)}>
                         Add To Cart
                     </button> 

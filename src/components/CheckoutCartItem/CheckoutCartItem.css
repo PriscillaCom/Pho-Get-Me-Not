@@ -2,17 +2,29 @@
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
 }
 
 .checkout-cart-item-container img {
     width: 200px;
     height: 150px;
+    
 }
 
 .checkout-cart-item-description {
     width: 60%;
+    display: grid;
+    grid-template-columns: auto auto 40%;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.inc-dec-button {
     display: flex;
-    justify-content: space-around;
+    width: 100px;
+    justify-content: center;
+}
+
+.quantity-style{
+    padding: 0px 15px;
 }

@@ -13,10 +13,12 @@ const CheckoutCartItem = (props)=> {
                     <img src={imageUrl} alt='food'/>
                     <div className='checkout-cart-item-description'>
                         <p>{title}</p>
-                        <p>$ {price}</p>
-                        <button onClick={context.addProductToCheckout.bind(this,props.id)}>Addon</button>
-                        <p>Quantity: {quantity}</p>
-                        <button onClick={context.removeProductFromCheckout.bind(this,props.id)}>Remove</button>
+                        <p>$ {price.toFixed(2)}</p>
+                        <div className='inc-dec-button'>
+                            <button onClick={context.addProductToCheckout.bind(this,props.id)}>Addon</button>
+                            <p className='quantity-style'>{quantity}</p>
+                            <button onClick={context.removeProductFromCheckout.bind(this,props.id)}>Remove</button>
+                        </div>
                     </div>
                 </div>
             )}

@@ -8,7 +8,7 @@ const CartItem = ({title, imageUrl, quantity, price}) => {
                 <img src={imageUrl} alt='food'/>
                 <div className='cart-item-description'>
                     <p>{title}</p>
-                    <p>$ {price}</p>
+                    <p>$ {price.toFixed(2)}</p>
                     <p>Quantity: {quantity}</p>
                 </div>
         </div>
