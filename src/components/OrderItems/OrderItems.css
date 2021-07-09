@@ -4,16 +4,36 @@
     align-items: flex-start;
     gap: 30px;
     font-size: 1vw;
-    overflow: auto;
 }
 
 .order_image{
     width: 18vw;
-    height: 33vh;
+    height: 35vh;
 }
 
 .content {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .order_items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vw;    
+    }
+
+    .order_image {
+        width: 45vw;
+        height: 22vh;
+    }
+
+    .content {
+        width: 100%;
+    }
+
 }

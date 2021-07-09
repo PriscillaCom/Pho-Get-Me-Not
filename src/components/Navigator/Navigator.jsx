@@ -15,11 +15,9 @@ const Navigator = () => (
         {
             context => (
                 <div className="navigator">
-                    <div className='logoContainer'>
-                        <Link to="/">
-                        <img src={Logo} alt='Hello Cat Logo' className='logo'/>
-                        </Link>
-                    </div>
+                    <Link to="/" className='logo-container'>
+                    <img src={Logo} alt='Hello Cat Logo' className='logo'/>
+                    </Link>
                     <div className='optionsContainer'>
                         <Link to="/" className='options'>Home</Link>
                         <Link to="/menu" className='options'>Menu</Link>

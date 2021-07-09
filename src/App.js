@@ -12,6 +12,12 @@ import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 import MainState from './context/MainState';
 
 class App extends React.Component {
+  componentDidMount(){
+    fetch('http://localhost:3000/')
+      .then(response => response.json())
+      .then(data => console.log('data',data))
+  }
+
   render(){
     return (
       <div>

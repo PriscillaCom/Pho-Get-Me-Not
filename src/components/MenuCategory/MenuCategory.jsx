@@ -9,7 +9,7 @@ const MenuCategory= ({title,imageUrl}) => {
             <img className='image' src={imageUrl} alt='food'/>
         </div>
         <div>
-            <Link to={`/menu/#${title}`}>{title.toUpperCase()} </Link>
+            <Link to={`/menu/#${title}`} className='menu-name'>{title.toUpperCase()} </Link>
         </div>
     </div>
     );

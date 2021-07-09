@@ -5,6 +5,15 @@
     align-items: center;
     justify-content: center;
 }
+.menu-name {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.menu-name:hover{
+    font-weight: 700;
+}
 
 .image {
     margin: 23px 0px;
@@ -14,5 +23,14 @@
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 500px) {
+    .image {
+        margin: 23px 0px;
+        height: 23vh;
+        width: 23vw;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}
 /* do a hover over affect later when selecting */
 /* modiy text portion */

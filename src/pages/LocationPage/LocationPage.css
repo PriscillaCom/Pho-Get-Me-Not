@@ -9,3 +9,9 @@
     background-color: #faf9f8;
 
 }
+
+@media only screen and (max-width: 1000px) {
+    .locationPage {
+        width: 100%;
+    }
+}

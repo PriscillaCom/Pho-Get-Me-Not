@@ -17,3 +17,14 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media only screen and (max-width: 500px) {
+    .content {
+        width: 100%;
+    }
+
+    .menu_image {
+        width: 45vw;
+        height: 22vh;
+    }
+}

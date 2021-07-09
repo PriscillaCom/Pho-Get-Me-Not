@@ -2,14 +2,20 @@
   height: 90px;
   width: 100%;
   display: flex;
-  color: darkgrey;
+  color: goldenrod;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
   background-color: #faf9f8;
+  font-size: 1.3rem;
+
 }
 
+.logo-container{
+  position: relative;
+  right: -20px;
+}
 .logo {
   padding: 10px 15px;
   height: 100px;
@@ -24,6 +30,12 @@
 .options {
   padding: 10px 15px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.options:hover {
+  font-weight: 700;
 }
 
 .shoppingIcon {
@@ -35,4 +47,17 @@
 .listContainer {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+  .navigator{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding: 10px 10px;
+    height: 90px;
+    width: 100px;
+  }
 }

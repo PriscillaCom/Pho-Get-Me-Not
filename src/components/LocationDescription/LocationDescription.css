@@ -11,3 +11,11 @@
 .amenities-list, .covid-list{
     list-style-type: circle;
 }
+
+@media only screen and (max-width: 1000px) {
+    .locationDescription {
+        position: absolute;
+        color: transparent;
+        font-size: .5rem;
+    }
+}
