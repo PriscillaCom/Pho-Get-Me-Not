@@ -49,15 +49,29 @@
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .navigator{
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .logo {
     padding: 10px 10px;
     height: 90px;
     width: 100px;
+  }
+
+  .optionsContainer {
+    position: relative;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+  }
+
+  .logo-container{
+    position: relative;
+    right: 0px;
   }
 }

@@ -4,3 +4,9 @@
     overflow: auto;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+   .checkout-preview-container {
+       width: 50vw;
+   }
+}

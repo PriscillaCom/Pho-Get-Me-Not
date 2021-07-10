@@ -50,3 +50,10 @@ input[type=submit] {
     border: 3px solid goldenrod;
     color: black;
   }
+
+  @media only screen and (max-width: 600px) {
+    .checkout-form-container {
+      width: 40vw;
+      font-size: 5px;
+    }
+}

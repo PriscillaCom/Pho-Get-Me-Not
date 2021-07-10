@@ -79,7 +79,7 @@ class CheckoutForm extends React.Component {
                                 <input 
                                     onClick={this.onSubmitSignIn} 
                                     type="submit" 
-                                    value='Continue Checkout'/>
+                                    value='Checkout'/>
                             </form>
                         </div>
                        <div className='form-total'>

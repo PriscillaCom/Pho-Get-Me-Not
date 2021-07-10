@@ -9,7 +9,7 @@ const MenuItems= ({title,price,imageUrl}) => {
         </div>
         <div className='content'>
             <h4>{title}</h4>
-            <h4>${price}</h4>
+            <h4>${price.toFixed(2)}</h4>
         </div>
     </div>
     );

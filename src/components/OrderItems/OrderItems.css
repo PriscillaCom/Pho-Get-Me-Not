@@ -18,7 +18,7 @@
     overflow: auto;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1050px) {
     .order_items {
         display: flex;
         flex-direction: column;
@@ -28,8 +28,8 @@
     }
 
     .order_image {
-        width: 45vw;
-        height: 22vh;
+        width: 44vw;
+        height: 30vh;
     }
 
     .content {

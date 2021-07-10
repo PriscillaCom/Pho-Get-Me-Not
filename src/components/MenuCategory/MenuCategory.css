@@ -31,6 +31,10 @@
         cursor: pointer;
         border-radius: 10px;
     }
+
+    .menu-name {
+        font-size: 15px;
+    }
 }
 /* do a hover over affect later when selecting */
 /* modiy text portion */

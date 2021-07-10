@@ -20,3 +20,21 @@
     align-items: flex-start;
     justify-content: center;
 }
+
+@media only screen and (max-width: 1050px) {
+   .cart-item-description {
+    font-size: 14px;
+   }
+
+   .cart-item-container {
+    font-size: 20px;
+    grid-template-columns: 65% 50px auto;
+}
+
+   .cart-item-container img {
+    width: 100px;
+    height: 80px;
+    border-radius: 3px;
+}
+}
+
