@@ -8,7 +8,7 @@ import MenuPage from './pages/MenuPage/MenuPage';
 import OrderPage from './pages/OrderPage/OrderPage';
 import LocationPage from './pages/LocationPage/LocationPage';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
-
+import SuccessPage from './pages/SuccessPage/SuccessPage';
 import MainState from './context/MainState';
 
 class App extends React.Component {
@@ -28,6 +28,7 @@ class App extends React.Component {
             <Route exact path='/order' component={OrderPage}/>
             <Route exact path='/location' component={LocationPage}/>
             <Route exact path='/checkout' component={CheckoutPage}/>
+            <Route exact path='/success' component={SuccessPage}/>
             <Route exact path='/' component={Homepage}/>
           </Switch>
       </MainState>
