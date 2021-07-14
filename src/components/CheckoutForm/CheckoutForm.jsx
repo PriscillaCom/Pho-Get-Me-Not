@@ -2,6 +2,8 @@ import React from 'react';
 
 import './CheckoutForm.css';
 
+import {Link} from 'react-router-dom';
+
 import ShopContext from '../../context/ShopContext';
 
 class CheckoutForm extends React.Component {
@@ -27,18 +29,20 @@ class CheckoutForm extends React.Component {
         this.setState({number: event.target.value})
     }
 
-    onSubmitSignIn = () => {
+    onSubmit = () => {
+        console.log('checkout');
         fetch('http://localhost:3000/checkout', {
             method: 'post',
-            headers: {'Content-Type' : 'application/json'},
+            headers: {'Content-Type' : 'application/json', 'Accept' : 'application/json'},
             body: JSON.stringify({
-                name: this.state.name,
-                email: this.state.email,
-                number: this.state.number
+                name: "Priscilla Moc",
+                email: "taro_priscilla@yahoo.com",
+                number: "626-416-8195"
             })
         })
         .then(response => response.json())
         .then(data => console.log('DATA', data));
+ 
     }
 
     render(){
@@ -47,7 +51,7 @@ class CheckoutForm extends React.Component {
                 {context => (
                     <div className="checkout-form-container">
                         <div className='checkout-form'>
-                            <form action='/checkout' method='post'>
+                            <form action="/checkout">
                                 <label htmlFor='name'>Name: </label>
                                 <input 
                                     type='text' 
@@ -77,7 +81,7 @@ class CheckoutForm extends React.Component {
                                     required></input>
                                 <small>Format: 123-456-7890</small>
                                 <input 
-                                    onClick={this.onSubmitSignIn} 
+                                    onClick={this.onSubmit} 
                                     type="submit" 
                                     value='Checkout'/>
                             </form>
