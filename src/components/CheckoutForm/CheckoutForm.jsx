@@ -3,6 +3,7 @@ import React from 'react';
 import './CheckoutForm.css';
 
 import ShopContext from '../../context/ShopContext';
+import { Redirect } from 'react-router-dom';
 
 class CheckoutForm extends React.Component {
 
@@ -12,7 +13,8 @@ class CheckoutForm extends React.Component {
             name: '',
             email: '',
             number: '',
-            orderedFood: []
+            orderedFood: [],
+            success: false
         }
     }
 
@@ -29,7 +31,6 @@ class CheckoutForm extends React.Component {
     }
 
     onSubmit = (cartItems) => {
-        console.log("contect cart" + this.context.cart);
         fetch('http://localhost:3000/checkout', {
             method: 'post',
             headers: {'Content-Type' : 'application/json'},
@@ -40,11 +41,19 @@ class CheckoutForm extends React.Component {
                 cartItems: cartItems
             })
         })
-        .then(response => response.json())
-        .then(data => console.log('DATA' + data));
+        .then(response => this.setState({success : true}))
+        .catch(error => {
+            console.log("error", error);
+            alert("An error occured, please try again later.");
+        });
+        
     }
 
     render(){
+        console.log("scus" + this.state.success);
+        if (this.state.success === true){
+            return <Redirect push to={{pathname: '/success'}} />
+        }
         return(
             <ShopContext.Consumer>
                 {context => (
@@ -80,7 +89,7 @@ class CheckoutForm extends React.Component {
                                     required></input>
                                 <small>Format: 123-456-7890</small>
                                 <input 
-                                    onClick={() => this.onSubmit(context.cart)} 
+                                    onClick={(event) => {event.preventDefault(); this.onSubmit(context.cart)}} 
                                     type="submit" 
                                     value='Checkout'/>
                             </form>
