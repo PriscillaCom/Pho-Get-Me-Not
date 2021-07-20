@@ -15,13 +15,13 @@ class MainState extends React.Component {
       );
 
       addProductToCart = product => {
-        console.log('Adding product', product, product.id);
+
         let updatedCart = [...this.state.cart];
     
         const UpdateItemIndex = updatedCart.findIndex(
           item => item.id === product.id
         )
-        console.log('item index',UpdateItemIndex);
+
         if(UpdateItemIndex < 0){
           updatedCart.push({...product, quantity: 1});
         }
@@ -81,7 +81,13 @@ class MainState extends React.Component {
 
       this.setState({cart: updatedCart});
     };
- 
+    
+    emptyCart = () => {
+      let updateCart = [];
+      this.setState({cart: updateCart});
+      console.log('update empty cart');
+    };
+
     render(){
         return <ShopContext.Provider value={{
             products: this.state.products, 
@@ -91,7 +97,8 @@ class MainState extends React.Component {
             addProductToCart: this.addProductToCart,
             removeProductFromCheckout: this.removeProductFromCheckout,
             addProductToCheckout: this.addProductToCheckout,
-            handleTotal: this.handleTotal
+            handleTotal: this.handleTotal,
+            emptyCart : this.emptyCart,
           }}>
               {this.props.children}
             </ShopContext.Provider>

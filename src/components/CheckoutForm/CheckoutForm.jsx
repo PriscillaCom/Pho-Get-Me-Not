@@ -50,7 +50,6 @@ class CheckoutForm extends React.Component {
     }
 
     render(){
-        console.log("scus" + this.state.success);
         if (this.state.success === true){
             return <Redirect push to={{pathname: '/success'}} />
         }

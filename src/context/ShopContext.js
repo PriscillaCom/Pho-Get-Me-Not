@@ -10,5 +10,6 @@ export default React.createContext({
     },
     removeProductFromCheckout: productId => {},
     addProductToCheckout: productId => {},
+    emptyCart : () => {},
     handleTotal: () => {}
 });
